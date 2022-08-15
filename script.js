@@ -40,3 +40,11 @@ const todos = [
     {text: 'Play with the dog', author:"Kent"}    
 ]
 
+localStorage.setItem("todos",JSON.stringify(todos))
+
+// After retrieving the javascript object from local storage, parse it back
+// into javascript object from string using parse
+
+let retrievedTodos = localStorage.getItem("todos")
+
+console.log(JSON.parse(retrievedTodos))
