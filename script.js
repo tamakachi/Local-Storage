@@ -28,3 +28,15 @@ console.log(username,age,trash)
 
 // In Chrome, local storage data can be viewed from Application Tab
 // While debugging with F12
+
+
+// Storing Javascript Objects in localStorage
+// You need to stringify the object into JSON format when storing it
+// When retrieving it you'll need to parse it back into javascript objects
+
+const todos = [
+    {text: 'Hangout with Ben', author:"Kent"},
+    {text: 'Study frontend', author:"Kent"},
+    {text: 'Play with the dog', author:"Kent"}    
+]
+
