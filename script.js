@@ -8,11 +8,23 @@
 
 localStorage.setItem("name","Kent")
 localStorage.setItem("age",32)
-
+localStorage.setItem("trash","this key value pair is trash and needs to be deleted")
 
 // Retrieving information from local storage requires the key
 let username = localStorage.getItem("name")
 let age = localStorage.getItem("age")
 
 
-console.log(username,age)
+// Deleting an item from local storage
+localStorage.removeItem("trash")
+
+let trash = localStorage.getItem("trash")
+
+// Deleting everything the app put in local storage
+
+//localStorage.clear()
+
+console.log(username,age,trash)
+
+// In Chrome, local storage data can be viewed from Application Tab
+// While debugging with F12
